@@ -1,0 +1,14 @@
+需要安装 pywin32, pyautogui, opencv 库
+安装指令（在cmd执行）：
+pip install pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install pyautogui -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+使用模拟器为雷电模拟器，分辨率需要调整为1280*720
+运行前，确保游戏已打开，并且位于肉鸽主页
+使用cmd运行脚本main.py，需要保证游戏右下角开始探索没被覆盖
+脚本运行过程中，不能移动模拟器位置，且无法使用鼠标。并确保模拟器在最前方
+探索使用干员为山，需确保 山 在近卫招募券的第一页，且能看到名字
+探索干员可以更换为煌，修改方法为
+    1、在start_game.py 中，取消注释第61、62行，并注释掉第58、59行（可以不注释）
+    2、在 gaming.py 中，注释掉第139-141行。
